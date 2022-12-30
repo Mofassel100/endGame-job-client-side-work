@@ -32,7 +32,7 @@ const AbuteEdit = () => {
     }
     console.log(aboutEdit,data);
     setUpdateData(aboutEdit)
-    fetch("http://localhost:5000/about", {
+    fetch("https://job-server-work.vercel.app/about", {
       method: "PUT", headers: { "content-type": "application/json" },
       body: JSON.stringify(aboutEdit)
     }).then((res) => res.json()

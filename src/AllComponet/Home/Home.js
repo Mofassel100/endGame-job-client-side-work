@@ -31,7 +31,7 @@ const Home = () => {
           message: message
         }
         console.log(ImgText);
-        fetch("http://localhost:5000/imageTextUploadeds", {
+        fetch("https://job-server-work.vercel.app/imageTextUploadeds", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(ImgText)

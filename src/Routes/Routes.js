@@ -21,17 +21,17 @@ errorElement:<ErrorPage></ErrorPage>,
 children:[
     {
         path:'/',
-        loader:async()=>await fetch("http://localhost:5000/imgShowsT"),
+        loader:async()=>await fetch("https://job-server-work.vercel.app/imgShowsT"),
         element:<Home></Home>
     },
     {
      path:"/media",
-     loader:async()=>await fetch("http://localhost:5000/imgShowsText"),
+     loader:async()=>await fetch("https://job-server-work.vercel.app/imgShowsText"),
      element:<Medias></Medias>   
     },
     {
         path:"/details",
-        loader:async()=>await fetch("http://localhost:5000/imgShowsText"),
+        loader:async()=>await fetch("https://job-server-work.vercel.app/imgShowsText"),
         element:<PrivateRoute><Details></Details></PrivateRoute>
     },
 
@@ -47,13 +47,13 @@ children:[
     },
     {
         path:'/aboute',
-        loader:async()=>await fetch("http://localhost:5000/about"),
+        loader:async()=>await fetch("https://job-server-work.vercel.app/about"),
         element:<Aboute></Aboute>
         
     },
     {
         path:'/aboutEdit',
-        loader:async()=>await fetch("http://localhost:5000/about"),
+        loader:async()=>await fetch("https://job-server-work.vercel.app/about"),
         element:<AbuteEdit></AbuteEdit>
     },
 

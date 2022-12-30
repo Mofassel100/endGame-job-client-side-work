@@ -23,7 +23,7 @@ const Details = () => {
         console.log(updateLikeLove, count);
 
         console.log(updateLikeLove);
-        fetch('http://localhost:5000/loveLikes', {
+        fetch('https://job-server-work.vercel.app/loveLikes', {
             method: "PATCH",
             headers: {
                 "content-type": "application/json"
