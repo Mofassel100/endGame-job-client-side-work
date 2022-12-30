@@ -1,0 +1,69 @@
+[debug] [2022-12-30T15:03:29.609Z] ----------------------------------------------------------------------
+[debug] [2022-12-30T15:03:29.612Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\NHC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-12-30T15:03:29.612Z] CLI Version:   11.15.0
+[debug] [2022-12-30T15:03:29.613Z] Platform:      win32
+[debug] [2022-12-30T15:03:29.613Z] Node Version:  v18.8.0
+[debug] [2022-12-30T15:03:29.614Z] Time:          Fri Dec 30 2022 21:03:29 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-12-30T15:03:29.614Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-30T15:03:29.741Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-30T15:03:29.742Z] > authorizing via signed-in user (smmofasselhosain.bba.ac.22@gmail.com)
+[debug] [2022-12-30T15:03:29.742Z] [iam] checking project end-game-jobs-titles for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-12-30T15:03:29.746Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/end-game-jobs-titles:testIamPermissions [none]
+[debug] [2022-12-30T15:03:29.746Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/end-game-jobs-titles:testIamPermissions x-goog-quota-user=projects/end-game-jobs-titles
+[debug] [2022-12-30T15:03:29.746Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/end-game-jobs-titles:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-30T15:03:31.459Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/end-game-jobs-titles:testIamPermissions 200
+[debug] [2022-12-30T15:03:31.459Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/end-game-jobs-titles:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-30T15:03:31.461Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/end-game-jobs-titles [none]
+[debug] [2022-12-30T15:03:31.999Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/end-game-jobs-titles 200
+[debug] [2022-12-30T15:03:32.000Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/end-game-jobs-titles {"projectId":"end-game-jobs-titles","projectNumber":"727567700987","displayName":"end-game-jobs-titles","name":"projects/end-game-jobs-titles","resources":{"hostingSite":"end-game-jobs-titles"},"state":"ACTIVE","etag":"1_7b231f35-9c9d-496f-a328-1d1c7a284aed"}
+[info] 
+[info] === Deploying to 'end-game-jobs-titles'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-12-30T15:03:32.011Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/end-game-jobs-titles/versions [none]
+[debug] [2022-12-30T15:03:32.011Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/end-game-jobs-titles/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-12-30T15:03:34.241Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/end-game-jobs-titles/versions 200
+[debug] [2022-12-30T15:03:34.242Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/end-game-jobs-titles/versions {"name":"projects/727567700987/sites/end-game-jobs-titles/versions/cd87d29679748184","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[end-game-jobs-titles]: beginning deploy... 
+[info] i  hosting[end-game-jobs-titles]: found 1 files in build 
+[debug] [2022-12-30T15:03:34.265Z] [hosting] uploading with 200 concurrency
+[debug] [2022-12-30T15:03:34.268Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2022-12-30T15:03:34.315Z] [hosting] hash cache [YnVpbGQ] stored for 1 files
+[debug] [2022-12-30T15:03:34.316Z] [hosting][hash queue][FINAL] {"max":28,"min":28,"avg":28,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":36}
+[debug] [2022-12-30T15:03:34.318Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/727567700987/sites/end-game-jobs-titles/versions/cd87d29679748184:populateFiles [none]
+[debug] [2022-12-30T15:03:34.318Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/727567700987/sites/end-game-jobs-titles/versions/cd87d29679748184:populateFiles {"files":{"/index.html":"220f72c50e78dd7db6a0e2e8783fa44d71c87868469dfeb3d87240d358d28d2d"}}
+[debug] [2022-12-30T15:03:35.413Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/727567700987/sites/end-game-jobs-titles/versions/cd87d29679748184:populateFiles 200
+[debug] [2022-12-30T15:03:35.413Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/727567700987/sites/end-game-jobs-titles/versions/cd87d29679748184:populateFiles {"uploadRequiredHashes":["220f72c50e78dd7db6a0e2e8783fa44d71c87868469dfeb3d87240d358d28d2d"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/end-game-jobs-titles/versions/cd87d29679748184/files"}
+[debug] [2022-12-30T15:03:35.414Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/end-game-jobs-titles/versions/cd87d29679748184/files/220f72c50e78dd7db6a0e2e8783fa44d71c87868469dfeb3d87240d358d28d2d [none]
+[debug] [2022-12-30T15:03:35.414Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/end-game-jobs-titles/versions/cd87d29679748184/files/220f72c50e78dd7db6a0e2e8783fa44d71c87868469dfeb3d87240d358d28d2d [stream]
+[debug] [2022-12-30T15:03:35.416Z] [hosting][populate queue][FINAL] {"max":1105,"min":1105,"avg":1105,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1107}
+[debug] [2022-12-30T15:03:35.417Z] [hosting] uploads queued: 1
+[debug] [2022-12-30T15:03:38.143Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/end-game-jobs-titles/versions/cd87d29679748184/files/220f72c50e78dd7db6a0e2e8783fa44d71c87868469dfeb3d87240d358d28d2d 200
+[debug] [2022-12-30T15:03:38.143Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/end-game-jobs-titles/versions/cd87d29679748184/files/220f72c50e78dd7db6a0e2e8783fa44d71c87868469dfeb3d87240d358d28d2d [stream]
+[debug] [2022-12-30T15:03:38.144Z] [hosting][upload queue][FINAL] {"max":2731,"min":2731,"avg":2731,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2731}
+[info] +  hosting[end-game-jobs-titles]: file upload complete 
+[debug] [2022-12-30T15:03:38.146Z] [hosting] deploy completed after 3902ms
+[debug] [2022-12-30T15:03:38.151Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "end-game-jobs-titles"
+    },
+    "version": "projects/727567700987/sites/end-game-jobs-titles/versions/cd87d29679748184"
+  }
+]
+[info] i  hosting[end-game-jobs-titles]: finalizing version... 
+[debug] [2022-12-30T15:03:38.157Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/end-game-jobs-titles/versions/cd87d29679748184 updateMask=status%2Cconfig
+[debug] [2022-12-30T15:03:38.157Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/end-game-jobs-titles/versions/cd87d29679748184 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
